@@ -1,7 +1,8 @@
 <section class="header">
   <nav>
     <a href="#"><img src="assets/eduford_img/logo.png" alt="logo"></a>
-    <div class="nav-links">
+    <div class="nav-links" id="nav-links">
+      <fa-icon [icon]="faXmark" (click)="onHideMenu()" #navLinks></fa-icon>
       <ul>
         <li><a href="#">Home</a></li>
         <li><a href="#">About</a></li>
@@ -10,6 +11,14 @@
         <li><a href="#">Contact us</a></li>
       </ul>
     </div>
+    <fa-icon [icon]="faBars" (click)="onShowMenu()"></fa-icon>
   </nav>
+
+  <div class="text-box">
+    <h1>Ziiash Bektenov Girls' High-School</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      Adipisci aliquid blanditiis <br> consectetur debitis dolor doloribus dolorum eos har?</p>
+    <a href="#" class="hero-btn">Visit us to know more.</a>
+  </div>
 
 </section>
