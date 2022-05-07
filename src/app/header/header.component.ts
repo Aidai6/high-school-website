@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, ElementRef, OnInit, Renderer2, ViewChild } from '@angular/core';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { faXmark } from '@fortawesome/free-solid-svg-icons/faXmark';
 
@@ -8,22 +8,20 @@ import { faXmark } from '@fortawesome/free-solid-svg-icons/faXmark';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-  // @ViewChild('navLinks'):
+  // @ts-ignore
+  @ViewChild('navLinks')navLinks!: ElementRef<>;
   faXmark = faXmark;
   faBars = faBars;
 
-  constructor() { }
-
-  ngOnInit(): void {
+  constructor(private render: Renderer2) { }
+  ngOnInit(){
   }
 
-  // onHideMenu() {
-  //   return this.navLinks.setStyle('right: -200px');
-  //
-  // }
-  //
-  // onShowMenu() {
-  //   return this.navLinks.setStyle('right: 0');
-  //
-  // }
+  onShowMenu() {
+    this.render.setStyle(this.navLinks.nativeElement,'right', '0');
+  }
+
+  onHideMenu() {
+    this.render.setStyle(this.navLinks.nativeElement,'right', '-200px');
+  }
 }
