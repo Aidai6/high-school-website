@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { CoursesComponent } from './courses/courses.component';
+import { CampusComponent } from './campus/campus.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    CoursesComponent
+    CoursesComponent,
+    CampusComponent
   ],
   imports: [
     BrowserModule,
