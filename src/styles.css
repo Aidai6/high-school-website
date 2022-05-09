@@ -24,6 +24,23 @@ p{
   padding: 10px;
 }
 
+.hero-btn{
+  display: inline-block;
+  text-decoration: none;
+  color:#ffffff;
+  border: 1px solid #ffffff;
+  padding: 12px 30px;
+  font-size: 13px;
+  position: relative;
+  cursor: pointer;
+}
+
+.hero-btn:hover{
+  border: 1px solid #fff;
+  background: #fff;
+  color: #000;
+}
+
 @media(max-width: 700px) {
   .row{
     flex-direction: column;
