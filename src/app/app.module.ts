@@ -8,6 +8,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { CoursesComponent } from './courses/courses.component';
 import { CampusComponent } from './campus/campus.component';
 import { FacilitiesComponent } from './facilities/facilities.component';
+import { TestimonialsComponent } from './testimonials/testimonials.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { FacilitiesComponent } from './facilities/facilities.component';
     HeaderComponent,
     CoursesComponent,
     CampusComponent,
-    FacilitiesComponent
+    FacilitiesComponent,
+    TestimonialsComponent
   ],
   imports: [
     BrowserModule,
