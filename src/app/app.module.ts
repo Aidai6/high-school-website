@@ -5,12 +5,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { CoursesComponent } from './courses/courses.component';
-import { CampusComponent } from './campus/campus.component';
-import { FacilitiesComponent } from './facilities/facilities.component';
-import { TestimonialsComponent } from './testimonials/testimonials.component';
-import { CtaComponent } from './cta/cta.component';
+import { CoursesComponent } from './home/courses/courses.component';
+import { CampusComponent } from './home/campus/campus.component';
+import { FacilitiesComponent } from './home/facilities/facilities.component';
+import { TestimonialsComponent } from './home/testimonials/testimonials.component';
+import { CtaComponent } from './home/cta/cta.component';
 import { FooterComponent } from './footer/footer.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { FooterComponent } from './footer/footer.component';
     FacilitiesComponent,
     TestimonialsComponent,
     CtaComponent,
-    FooterComponent
+    FooterComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

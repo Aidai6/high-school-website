@@ -1,0 +1,23 @@
+.cta {
+  width: 80%;
+  margin: 100px auto;
+  background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../../../assets/eduford_img/banner2.jpg');
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  text-align: center;
+  padding: 100px 0;
+}
+
+h1{
+  color: #ffffff;
+  margin-bottom: 40px;
+  padding: 0;
+}
+
+@media(max-width: 700px) {
+  h1{
+    font-size: 24px;
+  }
+}
+
