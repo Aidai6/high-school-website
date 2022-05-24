@@ -14,6 +14,7 @@ import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { CoursesPageComponent } from './courses-page/courses-page.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { CoursesPageComponent } from './courses-page/courses-page.component';
     FooterComponent,
     HomeComponent,
     AboutComponent,
-    CoursesPageComponent
+    CoursesPageComponent,
+    ContactUsComponent
   ],
   imports: [
     BrowserModule,
