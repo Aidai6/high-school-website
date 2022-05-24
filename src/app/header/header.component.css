@@ -1,7 +1,7 @@
 .header{
   min-height: 100vh;
   width: 100%;
-  background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url('../../assets/eduford_img/DSC02309.JPG');
+  background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url('../../assets/eduford_img/DSC02649.jpg');
   background-position: center;
   background-size: cover;
   position: relative;
@@ -69,6 +69,7 @@ nav img {
   font-size: 14px;
   margin: 10px auto 40px;
   color: #fff;
+  font-weight: 500;
 
 }
 
