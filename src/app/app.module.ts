@@ -12,6 +12,8 @@ import { TestimonialsComponent } from './home/testimonials/testimonials.componen
 import { CtaComponent } from './home/cta/cta.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
+import { AboutComponent } from './about/about.component';
+import { CoursesPageComponent } from './courses-page/courses-page.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { HomeComponent } from './home/home.component';
     TestimonialsComponent,
     CtaComponent,
     FooterComponent,
-    HomeComponent
+    HomeComponent,
+    AboutComponent,
+    CoursesPageComponent
   ],
   imports: [
     BrowserModule,

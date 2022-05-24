@@ -45,7 +45,6 @@ nav img {
   display: block;
   margin: auto;
   transition: 0.4s;
-
 }
 
 .nav-links ul li:hover::after{
@@ -72,8 +71,6 @@ nav img {
   color: #fff;
 
 }
-
-
 
 fa-icon{
   display: none;

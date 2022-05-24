@@ -35,7 +35,7 @@ p{
   cursor: pointer;
 }
 
-.hero-btn:hover{
+.hero-btn:hover {
   border: 1px solid #fff;
   background: #fff;
   color: #000;
