@@ -1,17 +1,17 @@
-<section class="header">
+<section class="header" [style.background-image]="isHome ? 'linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)),url(../../assets/images/cover1.jpg)' : 'linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)),url(../../assets/images/cover2.jpg)'"
+>
   <nav>
-    <a href="#"><img src="assets/eduford_img/logo.png" alt="logo"></a>
+    <a href="#"><img src="assets/images/logo.png" alt="logo"></a>
     <div class="nav-links" id="nav-links" #navLinks>
       <fa-icon [icon]="faXmark"
                (click)="onHideMenu()"
-                >
+      >
       </fa-icon>
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Course</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Contact us</a></li>
+        <li><a href="#" routerLink="/">Home</a></li>
+        <li><a href="#" routerLink="/about">About</a></li>
+        <li><a href="#" routerLink="/education">Education</a></li>
+        <li><a href="#" routerLink="/contactus">Contact us</a></li>
       </ul>
     </div>
     <fa-icon [icon]="faBars"
@@ -19,10 +19,10 @@
   </nav>
 
   <div class="text-box">
-    <h1>Ziiash Bektenov Girls' High-School</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-      Adipisci aliquid blanditiis <br> consectetur debitis dolor doloribus dolorum eos har?</p>
-    <a href="#" class="hero-btn">Visit us to know more.</a>
+    <h1>{{ title }}</h1>
+    <p>Issyk-Kul "Sapat" girls' educational complex-lyceum was established in 2004 as a part of Sapat Educational
+      System.<br> Our high-school is dedicated to providing an engaging and supportive education experience —
+      one that encourages our students to strive for higher academic goals and achieve bigger career ambitions.</p>
+    <a href="#" class="hero-btn" routerLink="/about">Visit us to know more.</a>
   </div>
-
 </section>

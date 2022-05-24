@@ -1,3 +1,3 @@
-<app-header></app-header>
-<router-outlet></router-outlet>
+<app-header [title]="title" [isHome]="isHome"></app-header>
+<router-outlet (activate)="setHeader()"></router-outlet>
 <app-footer></app-footer>

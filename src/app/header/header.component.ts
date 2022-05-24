@@ -1,6 +1,8 @@
-import { Component, ElementRef, OnInit, Renderer2, ViewChild } from '@angular/core';
+import { Component, ElementRef, Input, OnInit, Renderer2, ViewChild } from '@angular/core';
+
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { faXmark } from '@fortawesome/free-solid-svg-icons/faXmark';
+
 
 @Component({
   selector: 'app-header',
@@ -14,8 +16,14 @@ export class HeaderComponent implements OnInit {
   faBars = faBars;
 
   constructor(private render: Renderer2) { }
-  ngOnInit(){
+  @Input() title: string = '';
+  @Input() isHome!: boolean;
+
+
+
+  ngOnInit(): void {
   }
+
 
   onShowMenu() {
     this.render.setStyle(this.navLinks.nativeElement,'right', '0');
@@ -24,4 +32,6 @@ export class HeaderComponent implements OnInit {
   onHideMenu() {
     this.render.setStyle(this.navLinks.nativeElement,'right', '-200px');
   }
+
 }
+

@@ -22,14 +22,4 @@ p {
 .about-col img {
   width: 100%;
 }
-.red-btn {
-  border: 1px solid #f44336;
-  background: transparent;
-  color: #f44336;
-}
 
-.red-btn:hover {
-  color: white;
-  background:#f44336;
-  transition: 0.7s;
-}
