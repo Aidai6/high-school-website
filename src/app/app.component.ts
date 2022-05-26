@@ -22,7 +22,7 @@ export class AppComponent {
       this.title = 'Contact Us';
       this.isHome =false;
     }
-    else if (this.route.url =='/education') {
+    else if (this.route.url =='/courses') {
       this.title = 'Education';
       this.isHome =false;
     }

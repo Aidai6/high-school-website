@@ -1,5 +1,5 @@
 .header{
-  min-height: 100vh;
+  /*min-height:100vh;*/
   width: 100%;
   /*background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url('../../assets/images/cover1.jpg');*/
   background-position: center;
@@ -55,7 +55,7 @@ nav img {
   width: 90%;
   color: #fff;
   position: absolute;
-  top: 50%;
+  top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;

@@ -1,5 +1,5 @@
 <section class="header" [style.background-image]="isHome ? 'linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)),url(../../assets/images/cover1.jpg)' : 'linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)),url(../../assets/images/cover2.jpg)'"
->
+[style.min-height]="isHome ? '100vh' : '60vh'">
   <nav>
     <a href="#"><img src="assets/images/logo.png" alt="logo"></a>
     <div class="nav-links" id="nav-links" #navLinks>
@@ -20,9 +20,12 @@
 
   <div class="text-box">
     <h1>{{ title }}</h1>
-    <p>Issyk-Kul "Sapat" girls' educational complex-lyceum was established in 2004 as a part of Sapat Educational
+    <p [style.display]="isHome ? 'block' : 'none'">Issyk-Kul "Sapat" girls' educational complex-lyceum was established in 2004 as a part of Sapat Educational
       System.<br> Our high-school is dedicated to providing an engaging and supportive education experience —
       one that encourages our students to strive for higher academic goals and achieve bigger career ambitions.</p>
-    <a href="#" class="hero-btn" routerLink="/about">Visit us to know more.</a>
+    <a href="#"
+       class="hero-btn"
+       routerLink="/about"
+       [style.display]="isHome ? 'inline-block' : 'none'">Visit us to know more.</a>
   </div>
 </section>
