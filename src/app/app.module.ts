@@ -15,6 +15,9 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { CoursesPageComponent } from './courses-page/courses-page.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { ContactService } from './contact.service';
 
 @NgModule({
   declarations: [
@@ -34,9 +37,13 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule,
+
   ],
-  providers: [],
+  providers: [ContactService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
