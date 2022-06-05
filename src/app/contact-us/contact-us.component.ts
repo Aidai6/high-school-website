@@ -10,7 +10,7 @@ import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms'
   styleUrls: [`./contact-us.component.css`]
 })
 export class ContactUsComponent implements OnInit {
-  formData: any;
+  formData!: FormGroup;
 
   faHome = faHome;
   faPhone = faPhone;
@@ -19,21 +19,18 @@ export class ContactUsComponent implements OnInit {
   constructor(private builder: FormBuilder, private contact: ContactService) { }
 
   ngOnInit() {
-    this.formData = new FormGroup({
-      'name': new FormControl(null, [Validators.required]),
-      'email': new FormControl(null, [Validators.required, Validators.email]),
-      'subject': new FormControl(null, [Validators.required]),
-      'message': new FormControl(null, [Validators.required])
+    this.formData = this.builder.group({
+      name: new FormControl('', [Validators.required]),
+      email: new FormControl('', [Validators.required, Validators.email]),
+      subject: new FormControl('', [Validators.required]),
+      message: new FormControl('', [Validators.required])
     });
-
   }
 
   // @ts-ignore
   submitForm(formData) {
-    // const message = `Name: ${this.name}; Sender email: ${this.email}; Subject: ${this.subject}; Message: ${this.message}`
-    // alert(message);
     console.log(formData)
-    this.contact.PostMessage(FormData)
+    this.contact.PostMessage(formData)
       .subscribe(response => {
         location.href = 'https://mailthis.to/confirm'
         console.log(response)

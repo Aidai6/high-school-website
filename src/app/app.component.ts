@@ -15,7 +15,7 @@ export class AppComponent {
   setHeader() {
     let path = this.route.url.split('/')[1];
     if (this.route.url =='/') {
-      this.title = 'Ziiash Bektenov Girls High-School';
+      this.title = 'Ziiash Bektenov Girls'+"'"+ ' High-School';
       this.isHome = true;
     }
     else if (this.route.url =='/contactus') {
