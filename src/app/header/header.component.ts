@@ -18,12 +18,25 @@ export class HeaderComponent implements OnInit {
   constructor(private render: Renderer2) { }
   @Input() title: string = '';
   @Input() isHome!: boolean;
-
-
+  en: string = 'English';
+  ru: string = 'Russian';
+  kg: string = 'Kyrgyz';
+  lang!: string;
 
   ngOnInit(): void {
   }
 
+  changeLang(e: any ) {
+    this.lang = e.target.value;
+
+    if (typeof this.lang === 'string') {
+      localStorage.setItem('lang', this.lang);
+      window.location.reload();
+      console.log(this.lang);
+
+    }
+
+  }
 
   onShowMenu() {
     this.render.setStyle(this.navLinks.nativeElement,'right', '0');
@@ -32,6 +45,8 @@ export class HeaderComponent implements OnInit {
   onHideMenu() {
     this.render.setStyle(this.navLinks.nativeElement,'right', '-200px');
   }
+
+
 
 }
 

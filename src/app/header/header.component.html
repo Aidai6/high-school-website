@@ -12,6 +12,11 @@
         <li><a href="#" routerLink="/about">About</a></li>
         <li><a href="#" routerLink="/education">Education</a></li>
         <li><a href="#" routerLink="/contactus">Contact us</a></li>
+        <select (change)="changeLang($event)">
+          <option [value]="en" [selected]="lang == 'en'">English</option>
+          <option [value]="ru" [selected]="lang == 'ru'">Russian</option>
+          <option [value]="kg" [selected]="lang == 'kg'">Kyrgyz</option>
+        </select>
       </ul>
     </div>
     <fa-icon [icon]="faBars"
