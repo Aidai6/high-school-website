@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-root',
@@ -10,7 +11,10 @@ export class AppComponent {
   title:string = '';
   isHome: boolean = false;
 
-  constructor(private route: Router) {}
+  constructor(private route: Router, private translateService: TranslateService) {
+    this.translateService.setDefaultLang('en');
+    this.translateService.use(localStorage.getItem('lang') || 'en');
+  }
 
   setHeader() {
     let path = this.route.url.split('/')[1];

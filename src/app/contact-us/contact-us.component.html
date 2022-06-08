@@ -10,22 +10,22 @@
       <div>
         <fa-icon [icon]="faHome"></fa-icon>
         <span>
-          <h5>71/3 Erdeneev Street, 722122</h5>
-          <p>Choktal Village, Issyk-Kul Region, Kyrgyzstan</p>
+          <h5>{{ 'contact-address-line1' | translate }}</h5>
+          <p>{{ 'contact-address-line2' | translate }}</p>
         </span>
       </div>
       <div>
         <fa-icon [icon]="faPhone"></fa-icon>
         <span>
-        <h5>+996 xxxxxxxx</h5>
-        <p>Monday to Friday, 9AM to 5PM</p>
+        <h5>{{ 'contact-phone-line1' | translate }}</h5>
+        <p>{{ 'contact-phone-line2' | translate }}</p>
       </span>
       </div>
       <div>
         <fa-icon [icon]="faEnvelope"></fa-icon>
         <span>
-        <h5>24@sapat.edu.kg</h5>
-        <p>Email us your query</p>
+        <h5>{{ 'contact-email-line1' | translate }}</h5>
+        <p>{{ 'contact-email-line2' | translate }}</p>
       </span>
       </div>
     </div>
@@ -60,7 +60,7 @@
                     formControlName="message">
         </textarea>
         </div>
-          <button type="submit" class="hero-btn red-btn" >Send Message</button>
+          <button type="submit" class="hero-btn red-btn" >{{ 'contact-button' | translate }}</button>
       </form>
     </div>
   </div>

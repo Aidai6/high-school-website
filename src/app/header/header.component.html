@@ -8,14 +8,14 @@
       >
       </fa-icon>
       <ul>
-        <li><a href="#" routerLink="/">Home</a></li>
-        <li><a href="#" routerLink="/about">About</a></li>
-        <li><a href="#" routerLink="/education">Education</a></li>
-        <li><a href="#" routerLink="/contactus">Contact us</a></li>
+        <li><a href="#" routerLink="/">{{'header-nav-home' | translate }}</a></li>
+        <li><a href="#" routerLink="/about">{{'header-nav-about' | translate }}</a></li>
+        <li><a href="#" routerLink="/education">{{'header-nav-education' | translate }}</a></li>
+        <li><a href="#" routerLink="/contactus">{{'header-nav-contact-us' | translate }}</a></li>
         <select (change)="changeLang($event)">
-          <option [value]="en" [selected]="lang == 'en'">English</option>
-          <option [value]="ru" [selected]="lang == 'ru'">Russian</option>
-          <option [value]="kg" [selected]="lang == 'kg'">Kyrgyz</option>
+          <option value="en" [selected]="lang == 'en'">English</option>
+          <option value="ru" [selected]="lang == 'ru'">Русский</option>
+          <option value="kg" [selected]="lang == 'kg'">Кыгызча</option>
         </select>
       </ul>
     </div>
@@ -24,13 +24,11 @@
   </nav>
 
   <div class="text-box">
-    <h1>{{ title }}</h1>
-    <p [style.display]="isHome ? 'block' : 'none'">Issyk-Kul "Sapat" girls' educational complex-lyceum was established in 2004 as a part of Sapat Educational
-      System.<br> Our high-school is dedicated to providing an engaging and supportive education experience —
-      one that encourages our students to strive for higher academic goals and achieve bigger career ambitions.</p>
+    <h1>{{ 'title' | translate }}</h1>
+    <p [style.display]="isHome ? 'block' : 'none'">{{ 'header-subtitle' | translate }}</p>
     <a href="#"
        class="hero-btn"
        routerLink="/about"
-       [style.display]="isHome ? 'inline-block' : 'none'">Visit us to know more.</a>
+       [style.display]="isHome ? 'inline-block' : 'none'">{{ 'header-button' | translate}}</a>
   </div>
 </section>

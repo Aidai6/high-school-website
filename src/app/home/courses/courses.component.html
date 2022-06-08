@@ -1,29 +1,21 @@
 <section class="courses" >
-  <h1 [style.display]="isHome ? 'inline-block' : 'none'">Education</h1>
-  <p>Our school provides an extraordinary educational experience that fosters a love of learning in our students and helps them develop
-    <br>the knowledge, skills, and confidence to achieve their highest individual potential in school and in life.</p>
+  <h1 [style.display]="isHome ? 'inline-block' : 'none'">{{ 'courses-title' | translate }}</h1>
+  <p>{{ 'courses-subtitle' | translate}}</p>
 
   <div class="row">
     <div class="course-col">
-      <h3>Multilingualism</h3>
-      <p>Our school is committed to providing a holistic education that includes the study of four languages:
-        English, Kyrgyz, Russian, and Turkish. The first academic year students fully emerge into studying English
-        and Turkish languages. Following years, all subjects including Biology, Chemistry, and
-        Physics are taught in English.
+      <h3>{{ 'courses-multilingualism-title' | translate }}</h3>
+      <p>{{ 'courses-multilingualism-text' | translate }}
       </p>
     </div>
     <div class="course-col">
-      <h3>Profile Courses</h3>
-      <p>We recognize the uniqueness of each student, therefore in the third academic year and following we provide our
-        students freedom to choose a profile education in regards to their interests and future career plans.
-        Our education profiles are Medicine, Engineering, and Social Sciences.
+      <h3>{{ 'courses-profile-title' | translate }}</h3>
+      <p>{{ 'courses-profile-text' | translate }}
       </p>
     </div>
     <div class="course-col">
-      <h3>Higher Learning Outcomes</h3>
-      <p>We aim at equipping our students with the on-demand knowledge and skills that would
-        empower them for furthering their studies in the leading higher educational institutions around the world. More than 60% of recent graduates are pursuing
-        their bachelor’s programs on a full or partial scholarships.
+      <h3>{{ 'courses-higher-outcomes-title' | translate }}</h3>
+      <p>{{ 'courses-higher-outcome-text' | translate }}
       </p>
     </div>
   </div>

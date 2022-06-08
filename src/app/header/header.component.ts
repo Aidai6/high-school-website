@@ -23,19 +23,15 @@ export class HeaderComponent implements OnInit {
   kg: string = 'Kyrgyz';
   lang!: string;
 
-  ngOnInit(): void {
+  ngOnInit() {
+    this.lang =localStorage.getItem('lang') || 'en';
   }
 
   changeLang(e: any ) {
     this.lang = e.target.value;
-
-    if (typeof this.lang === 'string') {
-      localStorage.setItem('lang', this.lang);
-      window.location.reload();
-      console.log(this.lang);
-
-    }
-
+    localStorage.setItem('lang', this.lang);
+    window.location.reload();
+    console.log(this.lang)
   }
 
   onShowMenu() {
