@@ -1,12 +1,22 @@
 .about-us {
   width: 80%;
   margin: auto;
-  padding: 80px 0 50px;
+  padding: 50px 0 50px;
 }
+/*.row {*/
 
-.about-col {
+/*}*/
+
+.about-col-1 {
   flex-basis: 48%;
-  padding: 30px 2px;
+  padding: 0 2px;
+  white-space: pre-wrap;
+
+}
+.about-col-2 {
+  flex-basis: 48%;
+  padding: 55px 2px;
+  float: right;
 }
 
 /*h1 {*/
@@ -19,7 +29,8 @@ p {
   padding: 15px 0 25px;
 }
 
-.about-col img {
+ img {
   width: 100%;
+   float: start;
 }
 

@@ -2,14 +2,14 @@
   width:80%;
   margin: auto;
   text-align: center;
-  padding-top: 100px;
+  padding-top: 70px;
 }
 
 .course-col {
   flex-basis: 31%;
   background: #fff3f3;
   border-radius: 10px;
-  margin-bottom: 5%;
+  /*margin-bottom: 5%;*/
   padding: 20px 12px;
   box-sizing: border-box;
   transition: 0.7s;

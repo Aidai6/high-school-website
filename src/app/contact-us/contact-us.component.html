@@ -34,28 +34,28 @@
         <div class="form-group">
           <input type="text"
                  class="form-control"
-                 placeholder="Enter your name"
+                 placeholder="{{ 'contact-form-name' | translate }}"
                  name="name"
                  formControlName="name">
         </div>
         <div class="form-group">
           <input type="email"
                  class="form-control"
-                 placeholder="Enter your email address"
+                 placeholder="{{ 'contact-form-email' | translate }}"
                  name="email"
                  formControlName="email">
         </div>
         <div class="form-group">
           <input type="text"
                  class="form-control"
-                 placeholder="Enter your subject"
+                 placeholder="{{ 'contact-form-subject' | translate }}"
                  name="subject"
                  formControlName="subject">
         </div>
         <div class="form-group">
           <textarea rows="8"
                     class="form-control"
-                    placeholder="Message"
+                    placeholder="{{ 'contact-form-message' | translate }}"
                     name="message"
                     formControlName="message">
         </textarea>

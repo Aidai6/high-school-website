@@ -1,5 +1,5 @@
 {
-  "title": "Issyk-Kul Girls' High-School named after Ziiash Bektenov ",
+  "title": "Issyk-Kul Girls' High-School named \n after Ziiash Bektenov ",
   "header-subtitle": "Issyk-Kul \"Sapat\" girls' educational complex-lyceum was established in 2004 as a part of Sapat Educational System. Our high-school is dedicated to providing an engaging and supportive education experience — one that encourages our students to strive for higher academic goals and achieve bigger career ambitions.\n",
   "header-button": "Visit us to know more",
   "header-nav-home": "home",
@@ -46,8 +46,8 @@
   "footer-subtitle-line2": "- African proverb",
   "footer-copyright": "Made with true enthusiasm by our students",
 
-  "about-title": "We are the largest boarding school in the Issyk-Kul region",
-  "about-text": "",
+  "about-title": "Welcome!",
+  "about-text": "I am so glad to share information about Issyk-Kul Girls' High-School named after Ziiash Bektenov on our website.  Our school is the only independent boarding school in Issyk-Kul Region that serves gifted learners and our students thrive in a setting where like-minded peers engage in learning four languages, developing science and technology projects, and discussing about the origins of humanity. \n\nIn addition to our accelerated, interdisciplinary curriculum that includes science, Kyrgyz, Russian, English, and Turkish languages, physical education, music and arts, we offer chess and debate. We have intensive programs intended to prepare our students for regional and national Olympiads. Those programs let our students make their way to the leading positions and win prestigious academic titles of the country.\n\nOur community also includes hard-working teachers and administrators dedicated to creating an environment where students are challenged to stretch themselves, learn from mistakes, and interact with other intellectually-advanced children in pursuit of higher-level scholarship. I’d like to also mention that our staff members partner with parents to help ensure we meet each child’s individual needs. \n\nI hope these attributes – and many more – are readily apparent as you learn more about Issyk-Kul Girls’ High-School. Please schedule an appointment to meet our Admissions team and take the next steps to gain a stronger sense as to why our school is a great setting for your child and your family. \n\nCheers,\nTilek Bugubaev\nHead of School\n",
   "about-button": "Explore now",
 
   "contact-address-line1": "71/3 Erdeneev Street, 722122",
@@ -56,10 +56,10 @@
   "contact-phone-line2": "Monday to Friday, 9AM to 5PM",
   "contact-email-line1": "24@sapat.edu.kg",
   "contact-email-line2": "Email us your query",
-  "contact-form-name": "",
-  "contact-form-email": "",
-  "contact-form-subject": "",
-  "contact-form-message": "",
+  "contact-form-name": "Enter your name",
+  "contact-form-email": "Enter your email address",
+  "contact-form-subject": "Enter your subject",
+  "contact-form-message": "Enter your message",
   "contact-button": "Send Message"
 }
 

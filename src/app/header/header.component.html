@@ -12,11 +12,15 @@
         <li><a href="#" routerLink="/about">{{'header-nav-about' | translate }}</a></li>
         <li><a href="#" routerLink="/education">{{'header-nav-education' | translate }}</a></li>
         <li><a href="#" routerLink="/contactus">{{'header-nav-contact-us' | translate }}</a></li>
-        <select (change)="changeLang($event)">
-          <option value="en" [selected]="lang == 'en'">English</option>
-          <option value="ru" [selected]="lang == 'ru'">Русский</option>
-          <option value="kg" [selected]="lang == 'kg'">Кыгызча</option>
+        <select class="language-picker" (change)="changeLang($event)">
+          <option value="en" [selected]="lang == 'en'" >🇬🇧 English</option>
+          <option value="ru" [selected]="lang == 'ru'">🇷🇺 Русский</option>
+          <option value="kg" [selected]="lang == 'kg'">🇰🇬Кыгызча</option>
         </select>
+
+
+
+
       </ul>
     </div>
     <fa-icon [icon]="faBars"
@@ -24,7 +28,7 @@
   </nav>
 
   <div class="text-box">
-    <h1>{{ 'title' | translate }}</h1>
+    <h1 [style.text-transform]="ru ? 'none' : 'capitalize'" >{{ title }}</h1>
     <p [style.display]="isHome ? 'block' : 'none'">{{ 'header-subtitle' | translate }}</p>
     <a href="#"
        class="hero-btn"
@@ -32,3 +36,5 @@
        [style.display]="isHome ? 'inline-block' : 'none'">{{ 'header-button' | translate}}</a>
   </div>
 </section>
+
+<!--'title' | translate-->

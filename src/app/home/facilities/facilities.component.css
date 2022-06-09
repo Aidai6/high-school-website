@@ -2,12 +2,12 @@
   width: 80%;
   margin: auto;
   text-align: center;
-  padding-top: 100px;
+  padding-top: 60px;
 
 }
 .facilities-col {
   flex-basis: 32%;
-  margin-bottom: 5%;
+  /*margin-bottom: 5%;*/
   border-radius: 10px;
   text-align: left;
 }

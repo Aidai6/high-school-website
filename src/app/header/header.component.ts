@@ -31,7 +31,6 @@ export class HeaderComponent implements OnInit {
     this.lang = e.target.value;
     localStorage.setItem('lang', this.lang);
     window.location.reload();
-    console.log(this.lang)
   }
 
   onShowMenu() {
@@ -41,8 +40,5 @@ export class HeaderComponent implements OnInit {
   onHideMenu() {
     this.render.setStyle(this.navLinks.nativeElement,'right', '-200px');
   }
-
-
-
 }
 

@@ -60,6 +60,7 @@ nav img {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+  white-space: pre-wrap;
 }
 
 .text-box h1{
@@ -77,6 +78,23 @@ nav img {
 fa-icon{
   display: none;
 }
+
+.language-picker {
+  display: inline-block;
+  height: 23px;
+  overflow: hidden;
+  transition: all .3s ease;
+  margin-left: 10px;
+  vertical-align: center;
+  border-radius: 5px;
+  background-color: transparent;
+  color: white;
+
+}
+.language-picker:hover {
+  cursor: pointer;
+}
+
 
 @media(max-width: 700px) {
   .text-box h1{
@@ -105,7 +123,14 @@ fa-icon{
   }
   .nav-links ul{
     padding: 30px;
-
   }
+
+
+
+
+
+
+
+
 
 }
